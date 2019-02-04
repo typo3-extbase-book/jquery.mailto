@@ -1,15 +1,7 @@
 /**
  * jQuery MailTo
  * Simple jQuery plugin to hide email addresses from spambots
- *
- * Depends:
- * jquery.js 1.7+
- *
- * Demo:
- * http://projects.sergiodinislopes.pt/mailto/example/
- * 
- * Github:
- * https://github.com/sergiodlopes/mailto/ 
+ * Copyright (c) 2014 Sérgio Dinis Lopes
  */
 (function($) {
     $.fn.mailto = function(options) {        
@@ -61,3 +53,6 @@
         });    
     };
 })(jQuery);
+
+$(document).ready(function(){$('.email').mailto();});
+
